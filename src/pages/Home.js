@@ -17,7 +17,6 @@ function Home() {
   localStorage.getItem('movies', JSON.stringify(movies));
   const dispatch = useDispatch();
   dispatch(updateMovies(movies))
-  console.log(movies);
   return (
     <>
       <Hero />
